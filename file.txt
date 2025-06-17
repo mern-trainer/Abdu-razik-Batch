@@ -1,0 +1,14 @@
+Hello World!
+
+-> github -> cloud storage. 
+-> git -> version control system
+
+-> git init -> initialize git in the project.
+-> git add . -> add all files to git.
+-> git add <file> <file> <file> -> add specific files to git.
+
+-> git commit -m "first commit" -> commit the changes.
+-> git branch -M main -> create a new branch.
+-> git remote add origin https://github.com/techwithanupam/100daysofcloud.git -> add remote repository.
+-> git push -u origin main -> push the changes to remote repository.
+
