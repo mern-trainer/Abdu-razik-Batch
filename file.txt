@@ -16,3 +16,9 @@ Hello World!
 
 -> git push <remote_name> <branch_name> -> push the changes to remote repository.
 
+-> git branch -> list all branches.
+-> git branch <branch_name> -> create new branch.
+-> git checkout <branch_name> -> switch to branch.
+-> git merge <branch_name> -> merge branch into current branch.
+-> git pull <remote_name> <branch_name> -> pull changes from remote repository.
+-> git clone <remote_url> -> clone repository from remote.
