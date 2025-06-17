@@ -22,4 +22,3 @@ Hello World!
 -> git merge <branch_name> -> merge branch into current branch.
 -> git pull <remote_name> <branch_name> -> pull changes from remote repository.
 -> git clone <remote_url> -> clone repository from remote.
-->
