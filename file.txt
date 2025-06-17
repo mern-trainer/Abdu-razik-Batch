@@ -7,8 +7,12 @@ Hello World!
 -> git add . -> add all files to git.
 -> git add <file> <file> <file> -> add specific files to git.
 
+-> git config --global user.name "<name>"
+-> git config --global user.email "<email>"
+
 -> git commit -m "first commit" -> commit the changes.
--> git branch -M main -> create a new branch.
--> git remote add origin https://github.com/techwithanupam/100daysofcloud.git -> add remote repository.
--> git push -u origin main -> push the changes to remote repository.
+-> git remote add <remote_name> <remote_url> -> add remote repository.
+-> git branch -M main -> change branch name to main.
+
+-> git push <remote_name> <branch_name> -> push the changes to remote repository.
 
