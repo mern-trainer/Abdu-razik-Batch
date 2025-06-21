@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 
+        Styling HTML document
+        CSS - Cascading Style Sheet
+            How to apply CSS?
+                1. Inline
+                2. Internal
+                3. External
+        -->
+        <style>
+            /* 
+                universal selector
+                class selector
+                id selector
+                tag selector
+                child selector 
+                group selector
+                psudo - (element, class)
+            */
+            #demo1{
+                color: red;
+            }
+        </style>
+        <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <form action="/skdjhfksdf.html">
-        <label for="demo">Select products</label>
+        <label for="demo" id="demo1" >Select products</label>
         <input type="checkbox" id="demo" name="tv"> TV  
         <input type="checkbox" name="ac"> AC
         <input type="checkbox" name="fridge"> Fridge
