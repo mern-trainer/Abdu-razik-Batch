@@ -1,3 +1,111 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
 #demo1{
     color: green;
 }
+
+/* class selector */
+
+/* @font-face {
+    font-family: "DM Mono";
+    src: url(./assets/DMMono-Regular.ttf);
+}
+
+body{
+    font-size: 20px;
+    font-family: "DM Mono", monospace;
+}
+
+.input_box{
+    padding: 10px;
+    outline: none;
+    width: 400px;
+    border: 3px dashed #ff0000;
+    border-radius: 2px;
+}
+
+div{
+    background-color: #ff9883;
+}
+
+.demo1, .demo2, .demo3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+.demo3{
+    background-color: green;
+} */
+
+/* .demo2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: red;
+}
+
+.demo3 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: red;
+} */
+
+/* .box{
+    width: 200px;
+    height: 200px;
+} */
+/* div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+} */
+
+/* .box div{
+    background-color: red;
+}
+
+.inner_box{
+    transition: 300ms;
+} */
+
+/* psudo */
+
+/* .inner_box:hover{
+    background-color: green;
+    width: 120px;
+    height: 120px;
+} */
+
+/* .btn{
+    padding: 10px;
+    transition: 200ms;
+}
+
+.btn:active{
+    background-color: red;
+} */
+
+/* display */
+
+/* inline, inline-block, block, flex, grid */
+
+/* .d-inline{
+    display: inline-block;
+}  */
+
+.d-flex{
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+    align-items: center;
+    /* flex-direction: column; */
+}
+
