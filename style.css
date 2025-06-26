@@ -136,8 +136,7 @@ div{
 .box_1{
     /* margin-left: 100px; */
     position: absolute;
-    right: 100px;
-    bottom: 400px;
+    top: 20px;
 }
 
 .icon{
@@ -159,5 +158,76 @@ div{
     height: 200px;
     width: 200px;
     background-color: gray;
-    top: 0;
+    top: 20px;
+}
+
+/* animation */
+
+/* .box_item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: 500ms;
+}
+
+.box_item:hover{
+    scale: 0.5;
+} */
+
+/* Animation */
+
+/* .box_item{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: scale;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+} */
+
+@keyframes scale{
+    /* from{
+        left: 0;
+    }
+    to{
+        left: 100px;
+    } */
+     0%, 100%{
+        left: 0;
+        top: 0;
+     }
+     25%{
+        left: 100px;
+        top: 0;
+     }
+     50%{
+        left: 100px;
+        top: 100px;
+     }
+     75%{
+        left: 0;
+        top: 100px;
+     }
+     
+
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 3px solid gray;
+    animation: spin 0.8s infinite linear;
+    border-inline-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
