@@ -9,7 +9,7 @@
 
 /* class selector */
 
- @font-face {
+ /* @font-face {
     font-family: "DM Mono";
     src: url(./assets/DMMono-Regular.ttf);
 }
@@ -17,7 +17,7 @@
 body{
     font-size: 20px;
     font-family: "DM Mono", monospace;
-}
+} */
 /*
 .input_box{
     padding: 10px;
@@ -99,13 +99,65 @@ div{
     display: inline-block;
 }  */
 
-.d-flex{
+/* .d-flex{
     height: 200px;
     background-color: aqua;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     /* gap: 20px; */
-    align-items: center;
+    /* align-items: center; */
     /* flex-direction: column; */
+/* } */
+
+
+/* positions and animation */
+
+/* absolute, relative, fixed, sticky */
+
+.box_container{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin-top: 200px;
+    /* position: relative; */
 }
 
+.box_1, .box_2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box_2{
+    background-color: red;
+}
+
+.box_1{
+    /* margin-left: 100px; */
+    position: absolute;
+    right: 100px;
+    bottom: 400px;
+}
+
+.icon{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.icon img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.d-sticky{
+    position: sticky;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    top: 0;
+}
