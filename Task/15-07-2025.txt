@@ -1,0 +1,43 @@
+1. Write a function that takes two numbers as parameters and returns their sum.
+
+2. Create a function that checks if a number is even or odd.
+
+3. Write a program that prints numbers from 1 to 10 using a while loop.
+
+4. Write a function for a calculator that takes two numbers and an operator as parameters and returns the result of the operation. [+, -, *, /]
+
+5. Create an ATM with deposit, withdrawal and display balance options. [hint: use a variable to store the balance - global variable]
+
+6. Write a program that prints the first 10 multiples of 5 using a for loop.
+
+7. Create a function that checks if a given number is positive, negative, or zero.
+
+8. Write a program that prints the sum of first n natural numbers using a loop.
+
+9. Create a function that prints a multiplication table for a given number up to 10.
+
+10. Write a program that counts down from 10 to 1 using a while loop.
+
+11. Create a function that checks if a number is prime using a loop.
+
+12. Write a program that calculates the sum of squares of first n natural numbers.
+
+13. Create a function that prints all even numbers between 1 and n using a loop.
+
+14. Write a program that calculates the average of n numbers entered by the user.
+
+15. Create a function that prints the Fibonacci sequence up to n terms using loops.
+
+16. Write a program that calculates the power of a number using a loop instead of built-in functions.
+
+17. Create a function that checks if a given string is a palindrome.
+
+18. Create a function that converts a temperature from Celsius to Fahrenheit.
+
+19. Write a program that prints the multiplication table of a given number using a loop.
+
+20. Write a program that calculates the sum of digits of a given number.
+
+21. Create a function that checks if a given number is an Armstrong number.
+
+22. Write a program that prints the prime numbers between 1 and n using loops.
