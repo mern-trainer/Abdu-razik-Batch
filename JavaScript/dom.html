@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .error{
+            color: red;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="demo">
+        <b>Hello World</b>
+    </div>
+
+    <div class="demo">1</div>
+    <p class="demo_1">2</p>
+    <span class="demo">3</span>
+    <p class="demo">4</p> -->
+
+    <form name="signup" onsubmit="return handleForm()" oninput="handleClearErrors()">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Eg: John">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Eg: johndoe">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="Eg: 0V8tD@example.com">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Eg: 12345678">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password: </label>
+            <input type="password" id="confirm_password" name="confirm_password">
+            <span class="error"></span>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <button onclick="console.log(`Hello`)">Hey</button>
+
+    <script src="./dom.js"></script>
+</body>
+</html>
