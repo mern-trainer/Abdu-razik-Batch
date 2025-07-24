@@ -1,222 +1,159 @@
-// variable -> container for storing data
-// keywords -> Pre-Reserved words
-// identifier -> User defined words. variable names, function names
-// data type -> type of data stored in a variable.
-// operators -> used to perform operations on variables and values.
+// Destructuring -> Destructuring is a way to extract values from an array or object and assign them to variables.
+// Spread Operator -> ... -> Spread operator is used to expand an array or object into individual elements.
+// Rest Operator -> ... -> Rest operator is used to collect remaining elements from an array or object.
 
-// Assignment operator
-// Arithmetic operators
-// Comparison operators
-// Logical operators
+// Closure -> A closure is a function that has access to variables defined in its parent function, even after the parent function has returned.
+// Recursion -> A function that calls itself.
 
-// +, -, *, /, %
-// ==, ===, !=, !==, >, <, >=, <=
-// &&, ||, !
-// =, +=, -=, *=, /=, %=
+const cities = ["New York", "London", "Tokyo", "Paris", "Sydney"]
 
-// function -> block of code that performs a specific task.
+// const firstCity = cities[0]
+// const secondCity = cities[1]
+// const thirdCity = cities[2]
 
-// variable
+const [firstCity, secondCity, thirdCity] = cities;
 
-// let, const, var
+console.log(firstCity, secondCity, thirdCity)
 
-// scope -> global, functional, block
-
-
-// variable name -> camel case, -> firstName, _, letter, $
-
-// static and dynamic typing
-// static -> data type is known at compile time. -> number, string, boolean, null, undefined, symbol, bigint
-// dynamic -> data type is known at run time. -> object, array, function, date, regex, etc.
-
-// let -> block scoped, can be updated and can not be re-declared.
-
-let a;
-
-console.log(a)
-
-// const -> block scoped, cannot be updated and re-declared.
-
-const b = 10;
-
-console.log(b)
-
-// var -> function scoped, can be updated and re-declared.
-
-var c = 10
-
-console.log(c)
-
-var c = "Hello"
-
-console.log(c)
-
-// -------------------------------------------------------------
-
-const num = undefined
-
-const typeOfValue = typeof num
-
-console.log(typeOfValue)
-
-// --------------------------------------------------
-
-function func() {
-    return "Function invoked"
-}
-const val = func()
-
-console.log(val)
-
-function sumOfTwoNumbers(num1, num2) { // parameters
-    const sum = num1 + num2
-    return sum
+const obj = {
+    username: "John",
+    age: 30,
+    city: "New York",
+    country: "USA"
 }
 
-const res = sumOfTwoNumbers(10, 30) // arguments
-const res2 = sumOfTwoNumbers(100, 300) // arguments
+// const username = obj.username
+// const age = obj.age
+// const city = obj.city
 
-console.log(res, res2)
+const { username, age, country } = obj
 
-// conditionals
-// if, else, else if
-// switch
+const copyOfCities = [...cities]
+// pass by reference
+// pass by value
 
-if (10 === "10") {
-    console.log("10 is equal to 10")
-} else {
-    console.log("10 is not equal to 10")
+copyOfCities.push("Mumbai")
+
+console.log(copyOfCities)
+console.log(cities)
+
+const copyObj = {...obj}
+
+copyObj.age = 100
+
+console.log(copyObj)
+console.log(obj)
+
+const { city, ...remainingProperties } = obj
+
+console.log(obj)
+
+console.log(remainingProperties)
+
+const [first, second, ...rest] = cities
+
+console.log(first, second)
+console.log(rest)
+
+// closure
+
+const parentFunc = () => {
+    let data = 0;
+    const childFunc = () => {
+        data++;
+        return data
+    }
+    return childFunc
 }
 
-// else if
+const res = parentFunc()
 
-const n1 = 1
-const n2 = 2
-const n3 = 3
+console.log(res())
+console.log(res())
+console.log(res())
 
-if (n1 > n2 && n1 > n3) {
-    console.log("n1 is greater than n2 and n3")
-} else if (n2 > n3) {
-    console.log("n2 is greater than n3")
-} else {
-    console.log("n3 is greater than n1 and n2")
+const counter = (n) => {
+    let value = n
+    const increment = () => {
+        value++
+        return value
+    }
+    const reset = () => {
+        value = n
+        return value
+    }
+    const decrement = () => {
+        value--
+        return value
+    }
+    return {
+        increment: increment,
+        reset: reset,
+        decrement: decrement
+    }
 }
 
-// switch
+const func = counter(10)
 
-const day = 10
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.decrement())
+console.log(func.decrement())
+console.log(func.decrement())
+console.log(func.decrement())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.increment())
+console.log(func.reset())
 
-switch (day) {
-    case 1:
-        console.log("Monday")
-        break;
-    case 2:
-        console.log("Tuesday")
-        break;
-    case 3:
-        console.log("Wednesday")
-        break;
-    case 4:
-        console.log("Thursday")
-        break;
-    case 5:
-        console.log("Friday")
-        break;
-    case 6:
-        console.log("Saturday")
-        break;
-    case 7:
-        console.log("Sunday")
-        break;
-    default:
-        console.log("Invalid day")
-}
-
-const number = 10
-
-switch (number % 2) {
-    case 0:
-        console.log("Number is even")
-        break;
-    case 1:
-        console.log("Number is odd")
-        break;
-}
-
-// loop -> repeat a block of code until a condition is met.
-
-// for loop
-// while loop
-// do while loop
-
-// for loop
-
-// i++, i--
-// ++i, --i
-
-// let num1 = 10
-
-// let num3 = num1++ // pre increment
-
-// console.log(num3, num1)
-
-
-// for(let i = 0; i < 10; i++){
-//     if(i == 5){
-//         continue;
-//     }
-//     console.log(i) // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-// }
-
-// console.log("After for loop")
-let i = 0
-
-// while(i < 10){ // entry controlled loop
-//     if(i == 6){
-//         i++
-//         continue;
-//     }
-//     console.log(i)
-//     i++
-// }
-
-
-
-console.log("After while loop")
-
-do {
+// recursion -> call stack -> stack -> 
+let i = 0;
+const getCount = () => {
+    if (i == 3) {
+        return 100;
+    }
     console.log(i)
     i++
-} while (i < 0) // exit controlled loop
-
-// palindrome, prime, amstrong
-
-// 153 -> 1^3 + 5^3 + 3^3
-// 1456 -> 1^4 + 4^4 + 5^4 + 6^4
-
-// 123 => 321
-// 
-
-function is_palindrome(number = 0) {
-    
-    let temp = number
-
-    let rev = 0
-    while (temp > 0) { // 123
-        let rem = temp % 10
-        rev = rev * 10 + rem
-        temp = parseInt(temp / 10)
-    }
-    if (rev == number) {
-        console.log("Number is palindrome")
-    } else {
-        console.log("Number is not palindrome")
-    }
+    return getCount()
 }
 
-is_palindrome(123)
+console.log(getCount())
 
-// 123 -> %10 -> 3 -> 3 -> 123/10 => parseInt(12.3) -> 12
-// 12 % 10 -> 2 -> 30 + 2 -> 32
-// 1 % 10 -> 1 -> 320 + 1 -> 321
-// 0
+// 100
+
+// getCount() -> return 100 -> 0
+// getCount() -> return 100 -> 1
+// getCount() -> return 100 -> 2
+// getCount() -> return 100 -> 3
+
+// sum of n numbers
+
+const sumOfNNumbers = (n) => {
+    if (n == 0) {
+        return 0
+    }
+    return n + sumOfNNumbers(n - 1);
+}
+
+console.log(sumOfNNumbers(1000))
+
+// 1 + 2 + 3 + 4
+// 4 + sumOfNNumbers(3)
+// 4 + 3 + sumOfNNumbers(2)
+// 4 + 3 + 2 + sumOfNNumbers(1)
+// 4 + 3 + 2 + 1
+
+// example -> palindrome
+
+const isPalindrome = (number=0, temp=number, reverse=0) => {
+    if (temp <= 0) {
+        return reverse == number
+    }
+    return isPalindrome(number, parseInt(temp/10), ((reverse * 10) + (temp % 10)))
+}
+
+console.log(isPalindrome(123))
