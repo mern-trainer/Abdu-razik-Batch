@@ -20,12 +20,12 @@
 
 // pascal case -> FirstLetterCapitalized
 
-class User{
+class User {
 
     #first_name
     #last_name
 
-    constructor(first_name, last_name){
+    constructor(first_name, last_name) {
         this.#first_name = first_name
         this.#last_name = last_name
     }
@@ -38,7 +38,7 @@ class User{
     }
 }
 
-const user1 = new User("John", "Doe") 
+const user1 = new User("John", "Doe")
 
 user1.last_name = "Smith"
 
@@ -55,7 +55,7 @@ console.log(user2.display())
 // 2. Encapsulation -> binding methods and properties into a single unit. access modifiers
 // 3. Inheritance -> inheritance allows a class to inherit properties and methods from another class
 
-class Vehicle{
+class Vehicle {
     constructor(make, model, year) {
         this.make = make
         this.model = model
@@ -67,7 +67,7 @@ class Vehicle{
     }
 }
 
-class Honda extends Vehicle{
+class Honda extends Vehicle {
 
 }
 
@@ -84,13 +84,13 @@ console.log(h.display())
 // overloading -> same function name with different parameters
 // overriding -> same function name with same parameters
 
-class Calc{
+class Calc {
     add(a, b) {
         return a + b
     }
 }
 
-class Add extends Calc{
+class Add extends Calc {
     // overloading
     // add(a, b, c) {
     //     return a + b + c
@@ -118,3 +118,10 @@ console.log(res.parentAdd(10, 20))
 
 // const text = "Hello"
 // console.log(text.reverse())
+
+
+const arr1 = [10, 20, 30];
+
+arr1.push(3);
+
+console.log(arr1);
