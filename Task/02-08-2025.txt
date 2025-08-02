@@ -1,0 +1,27 @@
+1. Implement a Fibonacci sequence calculator using memoization to optimize performance by caching previously calculated values.
+
+2. Create a factorial calculator with memoization to store and reuse previously computed factorial results.
+
+3. Develop a function that efficiently calculates and caches the sum of digits in a number using memoization.
+
+4. Implement a function to calculate the cumulative sum of integers from 1 to a given number n using an optimized algorithm.
+
+5. Create a function that efficiently calculates the sum of even numbers in a range from 1 to n.
+
+6. Build an API integration function that:
+   - Fetches random user data from https://dummyjson.com/users/{user_id} API
+   - Generates random user IDs between 1-30
+   - Handles API responses and potential errors
+   - Returns formatted user information
+
+7. Develop a Simple Interest Calculator that:
+   - Takes principal amount, rate of interest, and time period as inputs
+   - Validates input parameters
+   - Returns calculated simple interest with proper formatting
+
+8. Design and implement a Calculator Application with:
+   - User Interface featuring a standard calculator layout
+   - Basic arithmetic operations (addition, subtraction, multiplication, division)
+   - Result memoization to cache frequently used calculations
+   - Error handling for invalid operations
+   - Responsive design for various screen sizes
