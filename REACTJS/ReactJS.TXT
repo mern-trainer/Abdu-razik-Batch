@@ -1,0 +1,25 @@
+Single page application (SPA)
+
+React -> React is a JavaScript library for building user interfaces.
+// framework
+
+Features
+    1. Component based architecture
+    2. Virtual DOM
+    3. Unidirectional data flow
+    4. JSX
+    5. React Hooks
+    6. React Native
+
+installation
+
+-> NodeJS (npm)
+-> React, ReactDOM
+
+-> React -> create elements
+-> React Dom -> render elements -> sync with browser DOM -> Reconcilation
+
+React - installation
+
+-> vite -> npm create vite <folder_name>
+
