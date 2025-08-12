@@ -7,7 +7,6 @@ const LandingPage = () => {
     return <div>
         <Header />
         <h1 className="container" id="title">Landing Page</h1>
-
     </div>
 }
 

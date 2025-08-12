@@ -1,0 +1,18 @@
+Task: MI Store Homepage UI Clone
+
+Requirements:
+1. Create separate components for each section of the MI Store homepage
+2. Import and assemble all components in a main page file
+
+Component Structure:
+    > src/
+        > components/
+            > Navbar.jsx
+            > HeroBanner.jsx
+            > ....etc
+        > pages/
+            > Home.jsx
+        > App.jsx
+        > main.jsx
+
+Reference URL: https://www.mi.com/in/store
