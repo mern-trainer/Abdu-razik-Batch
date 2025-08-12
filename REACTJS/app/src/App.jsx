@@ -3,7 +3,7 @@ import LandingPage from "./pages/LandingPage"
 
 const App = () => {
 
-    const age = 20
+    const age = 2001
 
     const elem = <div>
         <h1>Hello</h1>
