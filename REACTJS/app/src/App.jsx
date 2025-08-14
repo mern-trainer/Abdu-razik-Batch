@@ -1,26 +1,41 @@
-import { Fragment } from "react"
-import LandingPage from "./pages/LandingPage"
+import { FaShoppingCart } from "react-icons/fa";
+import { products } from "./constants/products";
+import { FaStar } from "react-icons/fa6";
 
 const App = () => {
 
-    const age = 2001
+    // const arr = [1, 2, 3, 4, 5, 6];
 
-    const elem = <div>
-        <h1>Hello</h1>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+    const handleClick = (title) => {
+        console.log(title)
+    }
+
+    return <div className="d-flex gap-1 flex-wrap justify-content-center">
+        {/* {
+            arr.map((number, index) => {
+                // key -> unique identifier -> Which element is create, update or delete
+                return <div key={index} className="bg-primary d-flex justify-content-center text-light">{number}</div>
+            })
+        } */}
+        <div id="clicked"></div>
+        {
+            products.map(product => {
+                return <div key={product.id} style={{width: "10rem"}} className="border border-2 border-secondary p-1 rounded-2">
+                    <div>
+                        <img src={product.image} alt={product.title} className="w-100" style={{aspectRatio: 1/1, objectFit: "contain"}}/>
+                    </div>
+                    <div>
+                        <h5 className="text-truncate">{product.title}</h5>
+                        <div className="d-flex justify-content-between">
+                            <span className="d-flex align-items-center gap-1"><FaStar /> {product.rating.rate}</span>
+                            <span>${product.price}</span>
+                        </div>
+                        <button onClick={() => handleClick(product.title)} className="btn btn-success w-100 rounded-2 mt-2"><FaShoppingCart /> Add to Cart</button>
+                    </div>
+                </div>
+            })
+        }
     </div>
-
-    return <Fragment>
-        <h1>Hello</h1>
-        <h2>Hey, I am React</h2>
-        <p>Age of user: {age}</p>
-        <LandingPage />
-        {elem}
-    </Fragment>
 }
 
 export default App;
